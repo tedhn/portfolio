@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portforlio/static/css/main.6b6cd8bf.chunk.css",
+    "main.js": "/Portforlio/static/js/main.9c40f9dc.chunk.js",
+    "main.js.map": "/Portforlio/static/js/main.9c40f9dc.chunk.js.map",
+    "runtime-main.js": "/Portforlio/static/js/runtime-main.4a474681.js",
+    "runtime-main.js.map": "/Portforlio/static/js/runtime-main.4a474681.js.map",
+    "static/js/2.14de64ee.chunk.js": "/Portforlio/static/js/2.14de64ee.chunk.js",
+    "static/js/2.14de64ee.chunk.js.map": "/Portforlio/static/js/2.14de64ee.chunk.js.map",
+    "index.html": "/Portforlio/index.html",
+    "precache-manifest.a9272e138c0ff295fe3b136e77df0342.js": "/Portforlio/precache-manifest.a9272e138c0ff295fe3b136e77df0342.js",
+    "service-worker.js": "/Portforlio/service-worker.js",
+    "static/css/main.6b6cd8bf.chunk.css.map": "/Portforlio/static/css/main.6b6cd8bf.chunk.css.map",
+    "static/js/2.14de64ee.chunk.js.LICENSE": "/Portforlio/static/js/2.14de64ee.chunk.js.LICENSE",
+    "static/media/Me.51af2bae.svg": "/Portforlio/static/media/Me.51af2bae.svg",
+    "static/media/amino.617e093c.svg": "/Portforlio/static/media/amino.617e093c.svg",
+    "static/media/discord.0d56f882.svg": "/Portforlio/static/media/discord.0d56f882.svg",
+    "static/media/dp.957a3806.svg": "/Portforlio/static/media/dp.957a3806.svg",
+    "static/media/welcome.e471d0e5.svg": "/Portforlio/static/media/welcome.e471d0e5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a474681.js",
+    "static/js/2.14de64ee.chunk.js",
+    "static/css/main.6b6cd8bf.chunk.css",
+    "static/js/main.9c40f9dc.chunk.js"
+  ]
+}
