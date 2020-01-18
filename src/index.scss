@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,700i&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ff9d0a;
+  }
+}
+
+.Container {
+  height: 100%;
+  background-color: #3c3c3c;
+
+  .loadingImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 1s ease forwards 3s;
+    outline-color: #ff9d0a;
+
+    > path {
+      stroke-dasharray: 520;
+      stroke-dashoffset: 520;
+      animation: dash 4s ease forwards;
+    }
+  }
+
+  .animatedDiv {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .navBar {
+    position: fixed;
+    z-index: 1;
+    left: 45%;
+    width: 50%;
+    top: 50px;
+    padding: 0;
+
+    > ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+
+      > li {
+        display: inline-block;
+        padding: 0 60px;
+        text-align: center;
+        cursor: pointer;
+
+        .navLinks {
+          font-weight: 300;
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: #ff9d0a;
+          }
+
+          &.active {
+            color: #ff9d0a;
+            border-bottom-color: #ff9d0a;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .homeText {
+    grid-column: 1;
+    color: white;
+    margin: auto;
+
+    .homeTitle {
+      font-weight: 700;
+      font-size: 72px;
+      padding-bottom: 10px;
+      cursor: default;
+
+      > span {
+        color: #ff9d0a;
+      }
+    }
+
+    .homeSubtitle {
+      font-weight: 300;
+      font-size: 24px;
+      cursor: default;
+    }
+  }
+
+  .homeImage {
+    position: absolute;
+    width: 48%;
+    bottom: 0;
+    left: 48%;
+    z-index: 2;
+  }
+}
+
+.about {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  .text {
+    margin: auto;
+    padding: 75px;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+
+    > span {
+      color: #ff9d0a;
+    }
+  }
+
+  .aboutImage {
+    margin: auto 100px auto auto;
+
+    > svg {
+      height: 350px;
+    }
+  }
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-weight: 700;
+  height: 100%;
+
+  .projectExamples {
+    grid-column: 2;
+    margin: auto 100px auto auto;
+    display: flex;
+    flex-direction: row;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 32px;
+      text-align: center;
+      padding-left: 10px;
+
+      .links {
+        height: 180px;
+      }
+    }
+  }
+
+  .text {
+    color: white;
+    grid-column: 1;
+    margin: auto;
+    font-size: 32px;
+    text-align: center;
+    width: 500px;
+
+    span {
+      color: #ff9d0a;
+    }
+  }
+}
+
+.contact {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 40% 60%;
+
+  .text {
+    grid-column: 1;
+    margin: auto;
+    padding: 75px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    .highlight {
+      color: #ff9d0a;
+    }
+  }
+
+  .input {
+    grid-column: 2;
+    color: white;
+    margin: auto auto auto 50px;
+    padding-top: 150px;
+
+    .inputBox {
+      > input {
+        width: 200px;
+        height: 25px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding: 0 10px;
+        transition: width 0.4s ease;
+
+        &:focus {
+          width: 400px;
+          border-radius: 10px;
+        }
+      }
+      > span {
+        float: left;
+        width: 100px;
+        margin: 12px 25px;
+      }
+
+      #message {
+        float: left;
+        width: 100px;
+        margin: 12px 25px;
+      }
+
+      .message {
+        margin: 12px 25px;
+        resize: none;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        outline: none;
+        width: 700px;
+        height: 300px;
+        &:focus {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    > button {
+      border: 2px white solid;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      outline: none;
+      background-color: transparent;
+      padding: 10px 40px;
+      border-radius: 20px;
+      letter-spacing: 2px;
+      transform: translateX(300px);
+
+      &:hover {
+        background-color: white;
+        color: #3c3c3c;
+      }
+    }
+  }
+}
+
+.Watermark {
+  position: absolute;
+  font-weight: 700;
+  font-style: italic;
+  opacity: 0.04;
+  color: white;
+  font-size: 350px;
+  bottom: 0;
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+}
+
+.preloader {
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #3c3c3c;
+  transition: opacity 2s ease 2.5s;
+
+  &.loaded {
+    opacity: 0;
+
+    &.removed {
+      z-index: -1;
+    }
+  }
+}
