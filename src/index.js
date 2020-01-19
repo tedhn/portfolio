@@ -49,7 +49,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/portfolio/"
+              to={process.env.PUBLIC_URL + "/"}
             >
               Home
             </NavLink>
@@ -59,7 +59,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/portfolio/About"
+              to={process.env.PUBLIC_URL + "/About"}
             >
               About
             </NavLink>
@@ -69,7 +69,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/portfolio/Projects"
+              to={process.env.PUBLIC_URL + "/Projects"}
             >
               Projects
             </NavLink>
@@ -79,7 +79,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/portfolio/Contact"
+              to={process.env.PUBLIC_URL + "/Contact"}
             >
               Contact
             </NavLink>
@@ -88,11 +88,24 @@ function App() {
       </div>
       {transition.map(({ item, props, key }) => (
         <animated.div className="animatedDiv" key={key} style={props}>
+          {console.log(process.env.PUBLIC_URL)}
           <Switch location={item}>
-            <Route exact path="/portfolio/" component={Home} />
-            <Route exact path="/portfolio/About" component={About} />
-            <Route exact path="/portfolio/Projects" component={Projects} />
-            <Route exact path="/portfolio/Contact" component={Contact} />
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/About"}
+              component={About}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/Projects"}
+              component={Projects}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/Contact"}
+              component={Contact}
+            />
           </Switch>
         </animated.div>
       ))}
