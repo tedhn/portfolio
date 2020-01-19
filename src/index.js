@@ -49,7 +49,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/"
+              to="/portfolio/"
             >
               Home
             </NavLink>
@@ -59,7 +59,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/About"
+              to="/portfolio/About"
             >
               About
             </NavLink>
@@ -69,7 +69,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/Projects"
+              to="/portfolio/Projects"
             >
               Projects
             </NavLink>
@@ -79,7 +79,7 @@ function App() {
               className="navLinks"
               activeClassName="navLinks active"
               exact
-              to="/Contact"
+              to="/portfolio/Contact"
             >
               Contact
             </NavLink>
@@ -89,10 +89,10 @@ function App() {
       {transition.map(({ item, props, key }) => (
         <animated.div className="animatedDiv" key={key} style={props}>
           <Switch location={item}>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/About" component={About} />
-            <Route exact path="/Projects" component={Projects} />
-            <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/portfolio/" component={Home} />
+            <Route exact path="/portfolio/About" component={About} />
+            <Route exact path="/portfolio/Projects" component={Projects} />
+            <Route exact path="/portfolio/Contact" component={Contact} />
           </Switch>
         </animated.div>
       ))}
