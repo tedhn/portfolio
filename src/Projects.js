@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ReactComponent as Amino } from "./svg/amino.svg";
-import { ReactComponent as Discord } from "./svg/discord.svg";
+import { ReactComponent as Discord } from "./svg/discordbot.svg";
 
 export default function Project() {
   return (
