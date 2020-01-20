@@ -9,6 +9,11 @@ import {
   __RouterContext
 } from "react-router-dom";
 import { ReactComponent as Welcome } from "./svg/welcome.svg";
+import { ReactComponent as Discord } from "./svg/discord.svg";
+import { ReactComponent as FB } from "./svg/facebook.svg";
+import { ReactComponent as Telegram } from "./svg/telegram.svg";
+import { ReactComponent as Instagram } from "./svg/instagram.svg";
+import { ReactComponent as Github } from "./svg/github.svg";
 import { animated, useTransition } from "react-spring";
 
 import Home from "./Home";
@@ -109,6 +114,30 @@ function App() {
           </Switch>
         </animated.div>
       ))}
+
+      <div className="social">
+        <a className="telegram" href="https://t.me/htehnd">
+          <Telegram />
+        </a>
+        <a className="facebook" href="https://web.facebook.com/htehnd">
+          <FB />
+        </a>
+        <a
+          className="instagram"
+          href="https://www.instagram.com/teeedork/?hl=en"
+        >
+          <Instagram />
+        </a>
+        <a className="github" href="https://github.com/tedhn">
+          <Github />
+        </a>
+        <a
+          className="discord"
+          href="https://discordapp.com/users/668645610978672650"
+        >
+          <Discord />
+        </a>
+      </div>
     </div>
   );
 }
