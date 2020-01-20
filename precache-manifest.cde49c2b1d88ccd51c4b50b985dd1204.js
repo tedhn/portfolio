@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8fd1852690c551a21797336265f51e8a",
+    "revision": "60f1ef02d0349a1d26e6a7dd9c6315db",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "66cbe29fe266e8dae12e",
+    "revision": "2cd6c9d30040b2cced91",
     "url": "/portfolio/static/css/main.311bf196.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.14de64ee.chunk.js.LICENSE"
   },
   {
-    "revision": "66cbe29fe266e8dae12e",
-    "url": "/portfolio/static/js/main.5f06be71.chunk.js"
+    "revision": "2cd6c9d30040b2cced91",
+    "url": "/portfolio/static/js/main.c7f7ca8c.chunk.js"
   },
   {
     "revision": "faa2bdbbdb70ac169773",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d6863b3103f494b0d437c7f8fc22bb60",
     "url": "/portfolio/static/media/discord.d6863b31.svg"
+  },
+  {
+    "revision": "116ded4001c69e7576a913fae1337541",
+    "url": "/portfolio/static/media/discordbot.116ded40.svg"
   },
   {
     "revision": "957a38067309b80c03db11f28db6e168",
